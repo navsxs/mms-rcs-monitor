@@ -17,7 +17,7 @@ git commit -m "Initial commit: Add Android MMS/RCS Monitor with GitHub Actions"
 git branch -M main
 
 # LINK TO YOUR REPOSITORY (Replace 'YOUR_USERNAME' with your actual GitHub account name)
-git remote add origin "${REPO_URL}"
+git remote add origin "https://${REPO_URL}"
 
 # Push your code up to GitHub
 git push -u origin main "https://${USERNAME}:${TOKEN}@${REPO_URL}"
