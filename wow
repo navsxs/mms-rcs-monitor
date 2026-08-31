@@ -3,6 +3,22 @@ TOKEN="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"
 REPO_URL="github.com/navsxs/mms-rcs-monitor"
 
 # Add changes, commit, and push using embedded creden>
+#git add .
+#git commit -m "Automated commit from Bash script"
+#git push "https://${USERNAME}:${TOKEN}@${REPO_URL}"
+# Initialize git tracking
+git init
+
+# Stage and commit your files
 git add .
-git commit -m "Automated commit from Bash script"
-git push "https://${USERNAME}:${TOKEN}@${REPO_URL}"
+git commit -m "Initial commit: Add Android MMS/RCS Monitor with GitHub Actions"
+
+# Branch rename to match standard workflow conventions
+git branch -M main
+
+# LINK TO YOUR REPOSITORY (Replace 'YOUR_USERNAME' with your actual GitHub account name)
+git remote add origin "https://${USERNAME}:${TOKEN}@${REPO_URL}"
+
+# Push your code up to GitHub
+git push -u origin main "https://${USERNAME}:${TOKEN}@${REPO_URL}"
+
