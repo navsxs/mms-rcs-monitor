@@ -73,11 +73,11 @@ class MainActivity : AppCompatActivity() {
         }
 
         contentResolver.registerContentObserver(
-            Uri.parse("content://mms-sms/"),
+            Uri.parse("content://mms/"),
             true,
             mmsRcsObserver!!
         )
-        appendLog("ContentObserver registered for 'content://mms-sms/'")
+        appendLog("ContentObserver registered for 'content://mms/'")
     }
 
     private fun processMmsRcsMessage(mmsUri: Uri) {
